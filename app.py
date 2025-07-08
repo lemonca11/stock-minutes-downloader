@@ -48,3 +48,7 @@ def index():
 def download_file(filename):
     file_path = os.path.join('data', filename)
     return send_file(file_path, as_attachment=True)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
+
