@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>下载完成</title>
+</head>
+<body>
+    <h3>✅ 数据下载完成！点击以下链接下载：</h3>
+    <ul>
+        {% for file in files %}
+            <li><a href="/download/{{ file }}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">🔁 返回首页</a>
+</body>
+</html>
